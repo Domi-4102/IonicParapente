@@ -1,0 +1,7 @@
+{
+  "name": "IonicParaglider",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
