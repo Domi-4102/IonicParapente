@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { Categories } from '../shared/models/categories';
 
 
 @Component({
@@ -8,6 +9,7 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+
   constructor() {}
 
 

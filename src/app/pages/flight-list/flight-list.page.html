@@ -3,16 +3,16 @@
         <ion-button slot="start">
             <ion-back-button [icon]="'arrow-back-outline'" default-href="home"></ion-back-button>
         </ion-button>
-        <ion-title>List of pilots</ion-title>
+        <ion-title>List of flights</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
     <ion-list>
-        <ion-row *ngFor="let item of pilots">
-            <ion-col>{{ item.FirstName }}</ion-col>
-            <ion-col>{{ item.LastName }}</ion-col>
-            <ion-col>{{ item.weight }}</ion-col>
+        <ion-row *ngFor="let item of flights">
+            <ion-col>{{ item.id }}</ion-col>
+            <ion-col>{{ item.FlyDate }}</ion-col>
+            <ion-col>{{ item.Duration }}</ion-col>
         </ion-row>
     </ion-list>
 </ion-content>

@@ -7,7 +7,14 @@ import { Categories } from '../../models/categories';
   styleUrls: ['./card-categories.component.css']
 })
 export class CardCategoriesComponent implements OnInit {
-  categories : Categories[]= [];
+  categories : Categories[] = [{
+                                  "id": 1,
+                                  "Name": "pilot",
+                              }, {
+                                  "id": 2,
+                                  "Name": "flight",
+                                  
+                              }];
   constructor() { }
 
   ngOnInit() {
