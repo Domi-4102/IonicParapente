@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { CardCategoriesComponent } from '../shared/components/card-categories/card-categories.component';
 
 
 @NgModule({
@@ -18,6 +19,6 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     RouterModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, CardCategoriesComponent]
 })
 export class HomePageModule {}
