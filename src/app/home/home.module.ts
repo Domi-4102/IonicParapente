@@ -19,6 +19,6 @@ import { CardCategoriesComponent } from '../shared/components/card-categories/ca
     SharedModule,
     RouterModule
   ],
-  declarations: [HomePage, CardCategoriesComponent]
+  declarations: [HomePage],
 })
 export class HomePageModule {}

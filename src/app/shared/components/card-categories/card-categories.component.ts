@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, Type } from '@angular/core';
 import { Categories } from '../../models/categories';
 
 @Component({
@@ -7,17 +7,17 @@ import { Categories } from '../../models/categories';
   styleUrls: ['./card-categories.component.css']
 })
 export class CardCategoriesComponent implements OnInit {
-  categories : Categories[] = [{
-                                  "id": 1,
-                                  "Name": "pilot",
-                              }, {
-                                  "id": 2,
-                                  "Name": "flight",
-                                  
-                              }];
+  @Input('item') item: Categories;
+  @Output('selectItem') selectItemEvent = new EventEmitter<any>();
+  
   constructor() { }
 
   ngOnInit() {
   }
+
+  cardSelect() {
+    this.selectItemEvent.emit(this.item);
+  }
+
 
 }

@@ -1,13 +1,18 @@
 <ion-header>
+
     <ion-toolbar>
+        <ion-row>
+            <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+            <ion-title>
+                Categories
+            </ion-title>
+        </ion-row>
 
-        <ion-title>
-            Categories
-        </ion-title>
+
     </ion-toolbar>
-
-
-
+    <ion-searchbar class="search" autocomplete="true" showCancelButton="never"></ion-searchbar>
 </ion-header>
 
 
@@ -15,9 +20,8 @@
 <ion-content [fullscreen]="true">
     <ion-grid>
         <ion-row>
-            <ion-col>
-                <app-card-categories>
-                </app-card-categories>
+            <ion-col size="6" *ngFor="let categorie of categories">
+                <app-card-categories [item]="categorie" (selectItem)="openModal($event)"></app-card-categories>
             </ion-col>
         </ion-row>
     </ion-grid>
