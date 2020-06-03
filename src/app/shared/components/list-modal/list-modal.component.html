@@ -1,27 +1,22 @@
 <ion-header>
     <ion-toolbar>
-        <ion-button slot="start">
-            <ion-back-button [icon]="'arrow-back-outline'" default-href="home"></ion-back-button>
-        </ion-button>
-        <ion-title>List of pilots</ion-title>
-    </ion-toolbar>
-</ion-header>
 
+        <ion-title>
+            List of {{name}}
+        </ion-title>
+        <ion-buttons slot="start" class="buttons-last-slot sc-ion-buttons-md-h sc-ion-buttons-md-s md hydrated">
+            <ion-button (click)="CloseModal()" class="md button button-clear ion-activatable ion-focusable hydrated">Back</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+    <ion-searchbar class="search" autocomplete="true" showCancelButton="never"></ion-searchbar>
+</ion-header>
 <ion-content>
-    <ion-list>
-        <ion-row>
-            <table>
-                <thead>
-                    <tr>
-                        <th *ngFor="let field of fields">{{ field }}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let item of items">
-                        <td *ngFor="let field of fields">{{ item[field] }}</td>
-                    </tr>
-                </tbody>
-            </table>
+    <ion-grid>
+        <ion-row size="6" *ngFor="let item of items">
+
+            <app-card-pilots size="12" *ngIf="name === 'pilot'" [item]="item"></app-card-pilots>
+            <app-card-flight size="12" *ngIf="name === 'flight'" [item]="item"></app-card-flight>
         </ion-row>
-    </ion-list>
+    </ion-grid>
+
 </ion-content>

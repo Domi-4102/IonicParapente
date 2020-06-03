@@ -1,24 +1,26 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   templateUrl: './list-modal.component.html',
   styleUrls: ['./list-modal.component.css']
 })
 export class ListModalComponent implements OnInit {
+  @Input('name') name ="";
   @Input('items') items = [];
-
-  constructor() { }
+  
+  constructor(private modalCtrl: ModalController) { 
+    
+  }
 
   ngOnInit() {
+    
+  }
+  
+  
+  CloseModal() {
+    
+    this.modalCtrl.dismiss().then(()=>{ this.modalCtrl = null; });
   }
 
-  get fields(): string[] {
-    const fields = [];
-
-    for(let field in this.items[0]) {
-      fields.push(field);
-    }
-
-    return fields;
-  }
 }

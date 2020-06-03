@@ -7,7 +7,6 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
-import { CardCategoriesComponent } from '../shared/components/card-categories/card-categories.component';
 
 
 @NgModule({
