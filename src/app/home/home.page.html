@@ -15,7 +15,7 @@
 <ion-content [fullscreen]="true">
     <ion-grid>
         <ion-row>
-            <ion-col size="6" *ngFor="let categorie of categories">
+            <ion-col *ngFor="let categorie of categories">
                 <app-card-categories [item]="categorie" (selectItem)="openModal($event)"></app-card-categories>
             </ion-col>
         </ion-row>

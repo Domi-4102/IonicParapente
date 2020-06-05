@@ -7,15 +7,20 @@
         <ion-buttons slot="start" class="buttons-last-slot sc-ion-buttons-md-h sc-ion-buttons-md-s md hydrated">
             <ion-button (click)="CloseModal()" class="md button button-clear ion-activatable ion-focusable hydrated">Back</ion-button>
         </ion-buttons>
+        <ion-buttons slot="end" class="buttons-last-slot sc-ion-buttons-md-h sc-ion-buttons-md-s md hydrated">
+            <ion-button (click)="CloseModal()" class="md button button-clear ion-activatable ion-focusable hydrated">Add</ion-button>
+        </ion-buttons>
     </ion-toolbar>
     <ion-searchbar class="search" autocomplete="true" showCancelButton="never"></ion-searchbar>
 </ion-header>
 <ion-content>
     <ion-grid>
-        <ion-row size="6" *ngFor="let item of items">
+        <ion-row *ngFor="let item of items">
 
-            <app-card-pilots size="12" *ngIf="name === 'pilot'" [item]="item"></app-card-pilots>
-            <app-card-flight size="12" *ngIf="name === 'flight'" [item]="item"></app-card-flight>
+            <app-card-pilots *ngIf="name === 'pilot'" [item]="item"></app-card-pilots>
+            <app-card-flight *ngIf="name === 'pilot\'s flight'" [item]="item"></app-card-flight>
+            <app-card-paraglider *ngIf="name === 'paraglider'" [item]="item"></app-card-paraglider>
+            <app-card-site *ngIf="name === 'site'" [item]="item"></app-card-site>
         </ion-row>
     </ion-grid>
 

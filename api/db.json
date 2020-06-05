@@ -1,147 +1,227 @@
 {
-    "pilot": [{
-        "id": 1,
-        "FirstName": "Abigail",
-        "LastName": "Hakonsson",
-        "PhoneNumber": "+1 336 959 1705",
-        "Adress": "5049 Utah Street",
-        "weight": 48,
-        "cotisationID": 10,
-        "roleID": 3,
-        "volID": 3
-    }, {
-        "id": 2,
-        "FirstName": "Jaquenetta",
-        "LastName": "Brimham",
-        "PhoneNumber": "+260 324 244 4974",
-        "Adress": "1531 Marcy Crossing",
-        "weight": 68,
-        "cotisationID": 9,
-        "roleID": 2,
-        "volID": 4
-    }, {
-        "id": 3,
-        "FirstName": "Cross",
-        "LastName": "Scandrite",
-        "PhoneNumber": "+55 251 871 1975",
-        "Adress": "0 Havey Avenue",
-        "weight": 87,
-        "cotisationID": 15,
-        "roleID": 1,
-        "volID": 4
-    }, {
-        "id": 4,
-        "FirstName": "Charyl",
-        "LastName": "Suttell",
-        "PhoneNumber": "+86 440 817 1189",
-        "Adress": "91988 Green Ridge Park",
-        "weight": 60,
-        "cotisationID": 15,
-        "roleID": 3,
-        "volID": 5
-    }, {
-        "id": 5,
-        "FirstName": "Marlena",
-        "LastName": "Pieters",
-        "PhoneNumber": "+81 175 192 4851",
-        "Adress": "7452 Porter Drive",
-        "weight": 90,
-        "cotisationID": 14,
-        "roleID": 2,
-        "volID": 3
-    }, {
-        "id": 6,
-        "FirstName": "Sibylle",
-        "LastName": "Spreadbury",
-        "PhoneNumber": "+420 494 191 3511",
-        "Adress": "72 Old Shore Avenue",
-        "weight": 60,
-        "cotisationID": 14,
-        "roleID": 3,
-        "volID": 4
-    }, {
-        "id": 7,
-        "FirstName": "Sheilah",
-        "LastName": "Frostdick",
-        "PhoneNumber": "+86 368 745 7383",
-        "Adress": "31423 Tony Plaza",
-        "weight": 69,
-        "cotisationID": 17,
-        "roleID": 3,
-        "volID": 2
-    }, {
-        "id": 8,
-        "FirstName": "Ivonne",
-        "LastName": "Risom",
-        "PhoneNumber": "+374 336 363 1649",
-        "Adress": "281 Superior Place",
-        "weight": 46,
-        "cotisationID": 19,
-        "roleID": 2,
-        "volID": 2
-    }, {
-        "id": 9,
-        "FirstName": "Page",
-        "LastName": "Masi",
-        "PhoneNumber": "+55 265 822 3941",
-        "Adress": "74 Elmside Hill",
-        "weight": 69,
-        "cotisationID": 18,
-        "roleID": 1,
-        "volID": 5
-    }, {
-        "id": 10,
-        "FirstName": "Hollyanne",
-        "LastName": "Heliar",
-        "PhoneNumber": "+351 675 504 4395",
-        "Adress": "22156 Forest Park",
-        "weight": 91,
-        "cotisationID": 6,
-        "roleID": 2,
-        "volID": 5
-    }],
-    "flight": [{
-        "id": 1,
-        "FlyDate": "2019/07/09",
-        "Duration": "2019/05/26"
-    }, {
-        "id": 2,
-        "FlyDate": "2020/04/04",
-        "Duration": "2019/12/03"
-    }, {
-        "id": 3,
-        "FlyDate": "2019/05/27",
-        "Duration": "2020/01/18"
-    }, {
-        "id": 4,
-        "FlyDate": "2019/07/13",
-        "Duration": "2019/06/01"
-    }, {
-        "id": 5,
-        "FlyDate": "2019/06/13",
-        "Duration": "2020/01/24"
-    }, {
-        "id": 6,
-        "FlyDate": "2020/01/09",
-        "Duration": "2019/08/31"
-    }, {
-        "id": 7,
-        "FlyDate": "2019/09/18",
-        "Duration": "2020/04/13"
-    }, {
-        "id": 8,
-        "FlyDate": "2020/01/31",
-        "Duration": "2019/09/17"
-    }, {
-        "id": 9,
-        "FlyDate": "2019/07/14",
-        "Duration": "2019/08/21"
-    }, {
-        "id": 10,
-        "FlyDate": "2020/02/19",
-        "Duration": "2020/03/14"
-    }],
-    "membershipFee": [],
-    "roles": []
-
+    "pilots": [{
+            "id": 1,
+            "name": "Yves Blavier",
+            "address": "Rue DeChezYves 4020",
+            "numberOfFlights": 1
+        },
+        {
+            "id": 2,
+            "name": "Alison Franck",
+            "address": "Rue DeChezAlison 4030",
+            "numberOfFlights": 1
+        },
+        {
+            "id": 3,
+            "name": "Antho Truc",
+            "address": "Rue Antho 4420",
+            "numberOfFlights": 1
+        },
+        {
+            "id": 4,
+            "name": "El Pedro Gomez",
+            "address": "Rue DeChezPedro 4020",
+            "numberOfFlights": 1
+        },
+        {
+            "id": 5,
+            "name": "Lionel Hardy",
+            "address": "Rue DeChezLionel 4030",
+            "numberOfFlights": 1
+        },
+        {
+            "id": 6,
+            "name": "Sandrine Remy",
+            "address": "Rue Technifutur 4000",
+            "numberOfFlights": 1
+        },
+        {
+            "id": 7,
+            "name": "Fred Breda",
+            "address": "Rue DeChezFred 4000",
+            "numberOfFlights": 1
+        },
+        {
+            "id": 8,
+            "name": "Steve Ramackers",
+            "address": "Rue ChezSteve 4030",
+            "numberOfFlights": 1
+        },
+        {
+            "id": 9,
+            "name": "Francisco Carmo",
+            "address": "Rue Carmo 4020",
+            "numberOfFlights": 0
+        }
+    ],
+    "paragliders": [{
+            "id": 1,
+            "name": "Cabriolet",
+            "commissioningDate": "2011-12-05T00:00:00",
+            "lastRevision": "2015-10-12T00:00:00",
+            "paragliderModelApprovalNumber": "EN/LTF A",
+            "numberOfFlights": 1
+        },
+        {
+            "id": 2,
+            "name": "F350",
+            "commissioningDate": "2011-07-30T00:00:00",
+            "lastRevision": "2016-11-23T00:00:00",
+            "paragliderModelApprovalNumber": "EN/LTF A",
+            "numberOfFlights": 2
+        },
+        {
+            "id": 3,
+            "name": "Malibu",
+            "commissioningDate": "2011-08-18T00:00:00",
+            "lastRevision": "2013-03-13T00:00:00",
+            "paragliderModelApprovalNumber": "EN/LTF A",
+            "numberOfFlights": 2
+        },
+        {
+            "id": 4,
+            "name": "Murciélago",
+            "commissioningDate": "2011-11-24T00:00:00",
+            "lastRevision": "2015-10-04T00:00:00",
+            "paragliderModelApprovalNumber": "EN/LTF A",
+            "numberOfFlights": 2
+        }
+    ],
+    "levels": [{
+            "id": 1,
+            "name": "Level 1",
+            "skill": "brevet A",
+            "isActive": true
+        },
+        {
+            "id": 2,
+            "name": "Level 2",
+            "skill": "brevet B",
+            "isActive": true
+        },
+        {
+            "id": 3,
+            "name": "Level 3",
+            "skill": "brevet C",
+            "isActive": true
+        }
+    ],
+    "sites": [{
+            "id": 1,
+            "name": "Boom",
+            "orientation": "S-E",
+            "altitudeTakeOff": 30,
+            "approachManeuver": null,
+            "siteGeoCoordinate": null,
+            "numberOfUse": 4,
+            "siteType": 1,
+            "levelId": 1
+        },
+        {
+            "id": 2,
+            "name": "Hornu",
+            "orientation": "N-E",
+            "altitudeTakeOff": 0,
+            "approachManeuver": "A vue",
+            "siteGeoCoordinate": null,
+            "numberOfUse": 5,
+            "siteType": 2,
+            "levelId": 2
+        },
+        {
+            "id": 3,
+            "name": "Ouren",
+            "orientation": "S-O",
+            "altitudeTakeOff": 35,
+            "approachManeuver": null,
+            "siteGeoCoordinate": null,
+            "numberOfUse": 4,
+            "siteType": 1,
+            "levelId": 3
+        },
+        {
+            "id": 4,
+            "name": "Avister",
+            "orientation": "S-O",
+            "altitudeTakeOff": 0,
+            "approachManeuver": "Aux instruments",
+            "siteGeoCoordinate": null,
+            "numberOfUse": 3,
+            "siteType": 2,
+            "levelId": 1
+        }
+    ],
+    "flights": [{
+            "id": 1,
+            "flightDate": "2020-01-01T00:00:00",
+            "duration": 1.00,
+            "pilotName": "Yves Blavier",
+            "paragliderName": "Cabriolet",
+            "takeOffSiteName": "Boom",
+            "landingSiteName": "Hornu"
+        },
+        {
+            "id": 2,
+            "flightDate": "2020-02-01T00:00:00",
+            "duration": 1.25,
+            "pilotName": "Alison Franck",
+            "paragliderName": "F350",
+            "takeOffSiteName": "Ouren",
+            "landingSiteName": "Hornu"
+        },
+        {
+            "id": 3,
+            "flightDate": "2020-01-02T00:00:00",
+            "duration": 1.50,
+            "pilotName": "Antho Truc",
+            "paragliderName": "Malibu",
+            "takeOffSiteName": "Ouren",
+            "landingSiteName": "Hornu"
+        },
+        {
+            "id": 4,
+            "flightDate": "2019-12-01T00:00:00",
+            "duration": 2.00,
+            "pilotName": "El Pedro Gomez",
+            "paragliderName": "Murciélago",
+            "takeOffSiteName": "Boom",
+            "landingSiteName": "Hornu"
+        },
+        {
+            "id": 5,
+            "flightDate": "2019-08-21T00:00:00",
+            "duration": 2.75,
+            "pilotName": "Lionel Hardy",
+            "paragliderName": "Durango",
+            "takeOffSiteName": "Boom",
+            "landingSiteName": "Hornu"
+        },
+        {
+            "id": 6,
+            "flightDate": "2020-05-20T00:00:00",
+            "duration": 1.00,
+            "pilotName": "Sandrine Remy",
+            "paragliderName": "Murciélago",
+            "takeOffSiteName": "Ouren",
+            "landingSiteName": "Hornu"
+        },
+        {
+            "id": 7,
+            "flightDate": "2019-05-18T00:00:00",
+            "duration": 2.00,
+            "pilotName": "Fred Breda",
+            "paragliderName": "Malibu",
+            "takeOffSiteName": "Boom",
+            "landingSiteName": "Hornu"
+        },
+        {
+            "id": 8,
+            "flightDate": "2019-08-02T00:00:00",
+            "duration": 1.50,
+            "pilotName": "Steve Ramackers",
+            "paragliderName": "F350",
+            "takeOffSiteName": "Ouren",
+            "landingSiteName": "Avister"
+        }
+    ]
 }

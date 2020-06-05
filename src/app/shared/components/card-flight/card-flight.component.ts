@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy, EventEmitter, Input, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 import { Flight } from '../../models/flight';
 import { FlightService } from '../../services/flight.service';
 
@@ -13,6 +13,10 @@ export class CardFlightComponent implements OnInit {
   constructor(private flightService: FlightService) { }
 
   ngOnInit() {
+  }
+  
+  cardSelect() {
+    this.selectItemEvent.emit(this.item);
   }
 
 }

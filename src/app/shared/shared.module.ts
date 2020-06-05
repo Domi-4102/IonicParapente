@@ -7,18 +7,36 @@ import { IonicModule } from '@ionic/angular';
 import { ListModalComponent } from './components/list-modal/list-modal.component';
 import { CardPilotsComponent } from './components/card-pilots/card-pilots.component';
 import { CardFlightComponent } from './components/card-flight/card-flight.component';
+import { CardParagliderComponent } from './components/card-paraglider/card-paraglider.component';
+import { CardSiteComponent } from './components/card-site/card-site.component';
 
 
 
 @NgModule({
-  declarations: [CardCategoriesComponent, ListModalComponent, CardPilotsComponent, CardFlightComponent],
+  declarations: [
+    CardCategoriesComponent, 
+    ListModalComponent, 
+    CardPilotsComponent, 
+    CardFlightComponent, 
+    CardParagliderComponent, 
+    CardSiteComponent
+  ],
   imports: [
     CommonModule,
     HttpClientModule,
     IonicModule
   ],
   providers: [PilotService],
-  exports: [HttpClientModule, CardCategoriesComponent, ListModalComponent, CardPilotsComponent,CardFlightComponent],
+  exports: [
+    HttpClientModule, 
+    CardCategoriesComponent, 
+    ListModalComponent, 
+    CardPilotsComponent,
+    CardFlightComponent,
+    CardParagliderComponent,
+    CardSiteComponent
+  
+  ],
   entryComponents: [ListModalComponent]
 })
 export class SharedModule { }
